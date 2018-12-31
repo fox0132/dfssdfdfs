@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
-const prefix = "r#";
+const prefix = "!";
 // Toxic Codes
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("Rainbow , r#help .",{type: 'WATCHING'});
+          client.user.setActivity("Rainbow , !help .",{type: 'WATCHING'});
   
   });// Toxic Codes
 client.on("message", message => {
@@ -44,13 +44,13 @@ client.on("message", message => {
     };// Toxic Codes
 });// Toxic Codes
 client.on("message", message => {
-  if (message.content === "r#help") {
+  if (message.content === "!help") {
       message.react('🌈')
 message.author.send(`**
-r#set 
+!set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
-r#inv 
+!inv 
 - لدعوة البوت
 - To Invite the bot
 // Toxic Codes// Toxic Codes// Toxic Codes
@@ -65,7 +65,7 @@ The steps of the role did not worked .!!// Toxic Codes
 **`)// Toxic Codes
   }})
    client.on('message', message => {
-	   if(message.content.startsWith(`r#inv`)){
+	   if(message.content.startsWith(`!inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
                  message.react('🌈')// Toxic Codes// Toxic Codes
 		   var embed = new Discord.RichEmbed()
