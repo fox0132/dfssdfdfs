@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
-const prefix = "!";
+const prefix = "&";
 // Toxic Codes
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("Rainbow , !help .",{type: 'WATCHING'});
+          client.user.setActivity("Rainbow , &help .",{type: 'WATCHING'});
   
   });// Toxic Codes
 client.on("message", message => {
@@ -44,13 +44,13 @@ client.on("message", message => {
     };// Toxic Codes
 });// Toxic Codes
 client.on("message", message => {
-  if (message.content === "!help") {
+  if (message.content === "&help") {
       message.react('🌈')
 message.author.send(`**
-!set 
+&set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
-!inv 
+&inv 
 - لدعوة البوت
 - To Invite the bot
 // Toxic Codes// Toxic Codes// Toxic Codes
