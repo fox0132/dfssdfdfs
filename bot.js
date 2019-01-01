@@ -5,7 +5,7 @@ const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
 const prefix = "&";
 // Toxic Codes
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag} !`);
+    console.log(`Logged in as ${client.user.tag} &`);
           client.user.setActivity("Rainbow , &help .",{type: 'WATCHING'});
   
   });// Toxic Codes
@@ -65,7 +65,7 @@ The steps of the role did not worked .!!// Toxic Codes
 **`)// Toxic Codes
   }})
    client.on('message', message => {
-	   if(message.content.startsWith(`!inv`)){
+	   if(message.content.startsWith(`&inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
                  message.react('🌈')// Toxic Codes// Toxic Codes
 		   var embed = new Discord.RichEmbed()
