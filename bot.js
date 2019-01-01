@@ -5,7 +5,7 @@ const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
 const prefix = "&";
 // Toxic Codes
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag} &`);
+    console.log(`Logged in as ${client.user.tag} !`);
           client.user.setActivity("Rainbow , &help .",{type: 'WATCHING'});
   
   });// Toxic Codes
